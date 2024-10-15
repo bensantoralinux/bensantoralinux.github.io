@@ -1,0 +1,4 @@
+*.txt linguist-documentation
+*.conf linguist-vendored
+*.md linguist-documentation
+
