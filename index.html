@@ -13,6 +13,7 @@
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
+	    font-size: 18px;
         }
         header {
             background: #333;
@@ -51,6 +52,23 @@
             max-width: 50%;
             height: auto;
         }
+        .textbox {
+            width: 75%; /* Reduced width by 25% from 60% */
+            height: 80vh; /* Ensure the height remains the same */
+            margin: 20px auto; /* Center horizontally */
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            overflow-y: auto;
+            word-wrap: break-word; /* Ensures text wraps */
+        }
+        .logo {
+            position: relative;
+            left: -10px;
+            top: 10px;
+            max-height: 50px;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -60,24 +78,33 @@
     <div class="container">
         <section class="section">
             <h2>About</h2>
-            <p> Linux OS and C Programming</p>
+            <p>Linux OS and C Programming</p>
         </section>
         <section class="section">
             <h2>External Links</h2>
             <div class="link-boxes">
                 <a href="https://distrowatch.com/" target="_blank">DistroWatch</a>
                 <a href="https://www.cyberciti.biz/howto/debian-linux/updated-debian-linux-12-x-released/" target="_blank">nixCraft</a>
-		<a href="https://github.com/nixcache/C/" target="_blank">C Programming</a>
+                <a href="https://github.com/nixcache/C/" target="_blank">C Programming</a>
             </div>
-    <section class="section image-box">
-    <!--h2>Linux OS</h2-->
-    <img src="images/image1.jpg" alt="Featured Image">
-</section>
-<section class="section textbox">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor et libero et bibendum. Sed et leo quis elit cursus fermentum. Pellentesque...</p>
-</section>
-<footer>
-    <p>&copy; 2024 Ben Santora</p>
-</footer>
+        </section>
+        <section class="section image-box">
+            <img src="images/image1.jpg" alt="Featured Image">
+        </section>
+        <section class="section textbox">
+            <p>
+Linux OS and C Programming
+<br><br>
+C programming and the Linux operating system are deeply interconnected, with Linux’s kernel being written primarily in C. This bond exists because C offers low-level access to hardware and efficient memory management, essential for building high-performance operating systems like Linux.
+<br><br>
+C’s portability allows Linux to run on diverse hardware, from personal computers to embedded systems, making it highly versatile. Many of the tools, libraries, and applications built for Linux are also written in C, further solidifying the relationship.
+<br><br>
+To fully understand Linux, knowledge of C is crucial, as many system calls and libraries are tied to the language. This ongoing partnership ensures that as Linux evolves, C will continue to be a foundational component, providing the performance and flexibility required for modern computing.</p>
+<br><br>
+        </section>
+        <footer>
+            <p>&copy; 2024 Ben Santora</p>
+        </footer>
+    </div>
 </body>
 </html>
